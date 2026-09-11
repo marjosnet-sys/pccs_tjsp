@@ -1429,7 +1429,7 @@
     </button>
 
     <div class="carousel">
-      <div class="slide-indicator" id="indicator">1 / 17</div>
+      <div class="slide-indicator" id="indicator">1 / 16</div>
       <div class="slides" id="slides">
 
 
@@ -1483,28 +1483,7 @@
         </section>
 
         <!-- Quadro 2: questões para aprofundamento no GT -->
-        <section class="slide">
-          <div class="chart-card">
-            <div class="topbar">
-              <div>
-                <span class="section-kicker">Questões para aprofundamento</span>
-                <h2 class="slide-title">A partir desses levantamentos, o que o GT precisa aprofundar?</h2>
-                <div class="slide-subtitle">
-                  Questões orientadoras para análise da carreira, da remuneração e da estrutura de cargos
-                </div>
-              </div>
-            </div>
-
-            <div class="question-grid">
-              <div class="question-card">Como reconhecer, desenvolver e valorizar as/os servidoras/es?</div>
-              <div class="question-card">Como aprimorar remuneração e carreira sem produzir novas distorções?</div>
-              <div class="question-card">Os cargos atualmente existentes refletem adequadamente a realidade e as necessidades atuais do TJSP?</div>
-              <div class="question-card">Existem lacunas na atual estrutura de cargos?</div>
-              <div class="question-card">O modelo atual de desenvolvimento profissional é satisfatório?</div>
-              <div class="question-card">Como analisar mecanismos como progressão, promoção, capacitação e avaliação de desempenho?</div>
-            </div>
-          </div>
-        </section>
+        
 
         <!-- Quadro 3: tabela -->
         <section class="slide">
@@ -2152,15 +2131,21 @@
           <div class="chart-card">
             <div class="topbar">
               <div>
-                <span class="section-kicker">Estrutura de carreiras</span>
-                <h2 class="slide-title">Questões centrais para análise do TJSP</h2>
+                <span class="section-kicker">Questões para aprofundamento</span>
+                <h2 class="slide-title">A partir desses levantamentos, o que o GT precisa aprofundar?</h2>
+                <div class="slide-subtitle">
+                  Questões orientadoras para análise da carreira, da remuneração e da estrutura de cargos
+                </div>
               </div>
             </div>
 
-            <div class="question-hero">
-              <div class="question-card">Os cargos atuais refletem a realidade do TJSP?</div>
-              <div class="question-card">Existem sobreposições?</div>
-              <div class="question-card">Existem lacunas?</div>
+            <div class="question-grid">
+              <div class="question-card">Como reconhecer, desenvolver e valorizar as/os servidoras/es?</div>
+              <div class="question-card">Como aprimorar remuneração e carreira sem produzir novas distorções?</div>
+              <div class="question-card">Os cargos atualmente existentes refletem adequadamente a realidade e as necessidades atuais do TJSP?</div>
+              <div class="question-card">Existem lacunas na atual estrutura de cargos?</div>
+              <div class="question-card">O modelo atual de desenvolvimento profissional é satisfatório?</div>
+              <div class="question-card">Como analisar mecanismos como progressão, promoção, capacitação e avaliação de desempenho?</div>
             </div>
           </div>
         </section>
@@ -2904,9 +2889,8 @@ const slideTitles = [...slides.children].map((slide,i)=>{
   return title ? title.textContent.trim() : "Capa";
 });
 
-/* Blocos: 1–3 contextualização | 4–6 estrutura TJSP |
-   7–12 carreira/remuneração | 13–15 dimensão do TJ | 16–17 referências/questões */
-const groupStarts = new Set([3,6,12,15]);
+/* Blocos: 1–2 contexto | 3–5 estrutura TJSP | 6–11 carreira/remuneração | 12–14 dimensão dos tribunais | 15 referência TJRS | 16 questões para o GT */
+const groupStarts = new Set([2,5,11,14,15]);
 
 for(let i=0;i<totalSlides;i++){
   const btn=document.createElement("button");
