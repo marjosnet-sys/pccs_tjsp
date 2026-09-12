@@ -1414,6 +1414,66 @@
     }
   }
 
+
+  /* Padronização dos títulos */
+  .slide-title{
+    text-transform:uppercase;
+    letter-spacing:.01em;
+  }
+
+  /* TJSP: destaque transversal em comparações */
+  .bar.tjsp-focus{
+    box-shadow:
+      0 0 0 3px #fbbf24,
+      0 0 16px rgba(251,191,36,.48);
+    filter:brightness(1.06);
+    z-index:3;
+  }
+
+  .bar-item.tjsp-item .label{
+    color:#fbbf24 !important;
+    font-weight:900 !important;
+    font-size:13px !important;
+    text-shadow:0 0 8px rgba(251,191,36,.28);
+  }
+
+  .bar-item.tjsp-item .value{
+    color:#fbbf24 !important;
+    font-weight:900 !important;
+  }
+
+  #salaryCompareTable tr.tj-highlight td{
+    background:rgba(251,191,36,.12) !important;
+    border-top:1px solid rgba(251,191,36,.35);
+    border-bottom:1px solid rgba(251,191,36,.35);
+    font-weight:900;
+  }
+
+  #salaryCompareTable tr.tj-highlight td:first-child{
+    color:#fbbf24;
+    box-shadow:inset 5px 0 0 #fbbf24;
+  }
+
+  .tjsp-key{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    color:#fde68a;
+    font-size:11px;
+    font-weight:800;
+    margin-top:8px;
+  }
+
+  .tjsp-key::before{
+    content:"";
+    width:12px;
+    height:12px;
+    border-radius:3px;
+    background:transparent;
+    border:2px solid #fbbf24;
+    box-shadow:0 0 8px rgba(251,191,36,.35);
+  }
+
 </style>
 </head>
 <body>
@@ -1451,7 +1511,7 @@
             <div class="topbar">
               <div>
                 <span class="section-kicker">Ponto de partida</span>
-                <h2 class="slide-title">Entre os aspectos destacados pela Administração</h2>
+                <h2 class="slide-title">ENTRE OS ASPECTOS DESTACADOS PELA ADMINISTRAÇÃO</h2>
                 <div class="slide-subtitle">
                   Elementos apresentados como relevantes para análise da carreira no TJSP
                 </div>
@@ -1490,7 +1550,7 @@
           <div class="chart-card">
             <div class="topbar">
               <div>
-                <h2 class="slide-title">Quadro de Pessoal × Dados Salariais</h2>
+                <h2 class="slide-title">QUADRO DE PESSOAL × DADOS SALARIAIS</h2>
                 <div class="slide-subtitle">
                   Quantitativos: referência 04/2026 · Remuneração: vigência 01/03/2026 · Vencimento básico
                 </div>
@@ -1579,7 +1639,7 @@
           <div class="chart-card">
             <div class="topbar">
               <div>
-                <h2 class="slide-title">De quais cargos efetivos vêm os ocupantes de cargos e funções comissionadas?</h2>
+                <h2 class="slide-title">CARGOS DE ORIGEM DOS COMISSIONADOS</h2>
                 <div class="slide-subtitle">
                   Distribuição dos servidores ocupantes de cargos e funções comissionadas segundo o cargo efetivo de origem
                 </div>
@@ -1647,7 +1707,7 @@
           <div class="chart-card">
             <div class="topbar">
               <div>
-                <h2 class="slide-title">Quais cargos e funções são ocupados?</h2>
+                <h2 class="slide-title">DISTRIBUIÇÃO DOS CARGOS COMISSIONADOS</h2>
                 <div class="slide-subtitle">
                   Distribuição dos 13.444 ocupantes de cargos e funções comissionadas, com possibilidade de visualizar os cargos individualmente ou agrupados
                 </div>
@@ -1723,7 +1783,7 @@
         <section class="slide">
           <div class="chart-card">
             <div class="topbar">
-              <h2 class="slide-title">Aumento até o 22º ano</h2>
+              <h2 class="slide-title">AUMENTO ATÉ O 22º ANO</h2>
               <div class="controls">
                 <label>
                   Exibir
@@ -1745,6 +1805,7 @@
               </div>
             </div>
             <div class="chart-scroll"><div id="chart1" class="chart-area"></div></div>
+            <div class="tjsp-key">TJSP destacado</div>
             <div class="legend">
               <div class="legend-row"><span class="swatch c1-sem"></span><span>SEM ADICIONAL TEMPO DE SERVIÇO</span></div>
               <div class="legend-row"><span class="swatch c1-com"></span><span>COM ADICIONAL TEMPO DE SERVIÇO</span></div>
@@ -1757,7 +1818,7 @@
         <section class="slide">
           <div class="chart-card">
             <div class="topbar">
-              <h2 class="slide-title">Aumento Médio por Progressão</h2>
+              <h2 class="slide-title">AUMENTO MÉDIO POR PROGRESSÃO</h2>
               <div class="controls">
                 <label>
                   Ordenar
@@ -1771,6 +1832,7 @@
               </div>
             </div>
             <div class="chart-scroll"><div id="chart2" class="chart-area"></div></div>
+            <div class="tjsp-key">TJSP destacado</div>
             <div class="legend">
               <div class="legend-row"><span class="swatch c2-main"></span><span>AUMENTO MÉDIO POR PROGRESSÃO</span></div>
             </div>
@@ -1782,7 +1844,7 @@
         <section class="slide">
           <div class="chart-card">
             <div class="topbar">
-              <h2 class="slide-title">Aumento Real até último nível</h2>
+              <h2 class="slide-title">AUMENTO REAL ATÉ ÚLTIMO NÍVEL</h2>
               <div class="controls">
                 <label>
                   Ordenar
@@ -1796,6 +1858,7 @@
               </div>
             </div>
             <div class="chart-scroll"><div id="chart3" class="chart-area"></div></div>
+            <div class="tjsp-key">TJSP destacado</div>
             <div class="legend">
               <div class="legend-row"><span class="swatch c3-main"></span><span>AUMENTO REAL ATÉ O ÚLTIMO NÍVEL</span></div>
             </div>
@@ -1808,7 +1871,7 @@
           <div class="chart-card">
             <div class="topbar">
               <div>
-                <h2 class="slide-title">Remuneração inicial e final nos TJs</h2>
+                <h2 class="slide-title">REMUNERAÇÃO INICIAL E FINAL NOS TJS</h2>
                 <div class="slide-subtitle">Comparativo de aumento até o 22º ano, com média de 95%</div>
               </div>
               <div class="controls">
@@ -1857,6 +1920,7 @@
                 </table>
               </div>
             </div>
+            <div class="tjsp-key">TJSP destacado</div>
             <div class="processed-note">Tabela processada em HTML: filtros, ordenação e destaque para TJSP e para a média de 95%.</div>
           </div>
         </section>
@@ -1866,7 +1930,7 @@
           <div class="chart-card">
             <div class="topbar">
               <div>
-                <h2 class="slide-title">Cenário atual · Escrevente Técnico Judiciário</h2>
+                <h2 class="slide-title">CENÁRIO ATUAL · ESCREVENTE TÉCNICO JUDICIÁRIO</h2>
                 <div class="slide-subtitle">Estrutura remuneratória atual por nível, classe/padrão, remuneração e aumento</div>
               </div>
               <div class="controls">
@@ -1929,7 +1993,7 @@
           <div class="chart-card">
             <div class="topbar">
               <div>
-                <h2 class="slide-title">Progressão até o 22º ano e condições associadas</h2>
+                <h2 class="slide-title">PROGRESSÃO ATÉ O 22º ANO E CONDIÇÕES ASSOCIADAS</h2>
                 <div class="slide-subtitle">Comparativo por tribunal, diferenciando qualificação, restrições de vagas e capacitação</div>
               </div>
               <div class="controls">
@@ -1963,6 +2027,7 @@
             </div>
 
             <div class="chart-scroll"><div id="criteriaChart" class="generic-chart"></div></div>
+            <div class="tjsp-key">TJSP destacado</div>
           </div>
         </section>
 
@@ -1971,7 +2036,7 @@
           <div class="chart-card">
             <div class="topbar">
               <div>
-                <h2 class="slide-title">Processos em andamento · ano base 2024</h2>
+                <h2 class="slide-title">PROCESSOS EM ANDAMENTO · ANO BASE 2024</h2>
                 <div class="slide-subtitle">Volume de processos em andamento por tribunal</div>
               </div>
               <div class="controls">
@@ -1987,6 +2052,7 @@
               </div>
             </div>
             <div class="chart-scroll"><div id="processChart" class="generic-chart"></div></div>
+            <div class="tjsp-key">TJSP destacado</div>
           </div>
         </section>
 
@@ -1995,31 +2061,7 @@
           <div class="chart-card">
             <div class="topbar">
               <div>
-                <h2 class="slide-title">Processos em andamento × servidor · ano base 2024</h2>
-                <div class="slide-subtitle">Relação entre processos em andamento e número de servidores</div>
-              </div>
-              <div class="controls">
-                <label>
-                  Ordenar
-                  <select id="processServerSort">
-                    <option value="original">Ordem apresentada</option>
-                    <option value="desc">Maior → menor</option>
-                    <option value="asc">Menor → maior</option>
-                    <option value="alpha">Tribunal A → Z</option>
-                  </select>
-                </label>
-              </div>
-            </div>
-            <div class="chart-scroll"><div id="processServerChart" class="generic-chart"></div></div>
-          </div>
-        </section>
-
-        <!-- Quadro adicional: servidores -->
-        <section class="slide">
-          <div class="chart-card">
-            <div class="topbar">
-              <div>
-                <h2 class="slide-title">Servidores · ano base 2024</h2>
+                <h2 class="slide-title">SERVIDORES · ANO BASE 2024</h2>
                 <div class="slide-subtitle">Quantidade de servidoras/es por tribunal</div>
               </div>
               <div class="controls">
@@ -2035,6 +2077,32 @@
               </div>
             </div>
             <div class="chart-scroll"><div id="servantsChart" class="generic-chart"></div></div>
+            <div class="tjsp-key">TJSP destacado</div>
+          </div>
+        </section>
+
+        <!-- Quadro adicional: servidores -->
+        <section class="slide">
+          <div class="chart-card">
+            <div class="topbar">
+              <div>
+                <h2 class="slide-title">PROCESSOS EM ANDAMENTO × SERVIDOR · ANO BASE 2024</h2>
+                <div class="slide-subtitle">Relação entre processos em andamento e número de servidores</div>
+              </div>
+              <div class="controls">
+                <label>
+                  Ordenar
+                  <select id="processServerSort">
+                    <option value="original">Ordem apresentada</option>
+                    <option value="desc">Maior → menor</option>
+                    <option value="asc">Menor → maior</option>
+                    <option value="alpha">Tribunal A → Z</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="chart-scroll"><div id="processServerChart" class="generic-chart"></div></div>
+            <div class="tjsp-key">TJSP destacado</div>
           </div>
         </section>
 
@@ -2044,7 +2112,7 @@
             <div class="topbar">
               <div>
                 <span class="section-kicker">Referência comparativa</span>
-                <h2 class="slide-title">Modelo TJRS · estrutura de carreiras</h2>
+                <h2 class="slide-title">MODELO TJRS · ESTRUTURA DE CARREIRAS</h2>
                 <div class="slide-subtitle">Carreiras mais amplas, organizadas por áreas e especialidades, com preservação das atribuições profissionais específicas</div>
               </div>
             </div>
@@ -2118,9 +2186,9 @@
                     <li>Preservação de <strong>requisitos e atribuições profissionais específicas</strong>.</li>
                   </ul>
                 </div>
-              <!--  <div class="tjrs-takeaway">
+                <div class="tjrs-takeaway">
                   Para o debate do TJSP: é possível simplificar a estrutura sem apagar as especificidades profissionais?
-                </div> -->
+                </div>
               </aside>
             </div>
           </div>
@@ -2132,7 +2200,7 @@
             <div class="topbar">
               <div>
                 <span class="section-kicker">Questões para aprofundamento</span>
-                <h2 class="slide-title">A partir desses levantamentos, o que o GT precisa aprofundar?</h2>
+                <h2 class="slide-title">A PARTIR DESSES LEVANTAMENTOS, O QUE O GT PRECISA APROFUNDAR?</h2>
                 <div class="slide-subtitle">
                   Questões orientadoras para análise da carreira, da remuneração e da estrutura de cargos
                 </div>
@@ -2534,6 +2602,10 @@ function renderChart(containerId,dadosBase,options={}){
     const wrap=document.createElement("div"); wrap.className="bar-wrap";
     const bar=document.createElement("div");
     bar.className=`bar ${useGroupColors ? `c1-${d.grupo}` : colorClass}`;
+    if(String(d.tribunal).replace("*","")==="TJSP"){
+      bar.classList.add("tjsp-focus");
+      item.classList.add("tjsp-item");
+    }
     bar.style.height="0%"; bar.tabIndex=0;
     const value=document.createElement("div"); value.className="value"; value.textContent=formatPct(d.valor);
     const label=document.createElement("div"); label.className="label"; label.textContent=d.tribunal;
@@ -2800,6 +2872,10 @@ function renderGenericChart(containerId, data, options){
     const bar=document.createElement("div");
     const cls=groupColors ? d.grupo : colorClass;
     bar.className=`bar ${cls}`;
+    if(String(d.tribunal).replace("*","")==="TJSP"){
+      bar.classList.add("tjsp-focus");
+      item.classList.add("tjsp-item");
+    }
     bar.style.height="0%";
     bar.tabIndex=0;
 
